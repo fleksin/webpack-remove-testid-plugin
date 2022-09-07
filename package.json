@@ -1,0 +1,27 @@
+{
+  "name": "webpack-remove-testid-plugin",
+  "version": "1.0.0",
+  "description": "remove 'data-testid' attribute from component",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/generator": "^7.19.0",
+    "@babel/parser": "^7.19.0",
+    "@babel/traverse": "^7.19.0",
+    "release-it": "^15.4.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0"
+  },
+  "peerDependencies": {
+    "@babel/generator": "^7.19.0",
+    "@babel/parser": "^7.19.0",
+    "@babel/traverse": "^7.19.0",
+    "webpack": "^5.74.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fleksin",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {}
+}
