@@ -3,7 +3,6 @@ import { Compiler, NormalModule } from 'webpack';
 export class removeTestIdPlugin {
   apply(compiler: Compiler) {
     compiler.hooks.compilation.tap(removeTestIdPlugin.name, (compilation, compilationParams) => {
-      console.log('This is an example plugin! tapped before compiler');
       const isWebpackV5 = compiler.webpack && compiler.webpack.version >= '5';
 
       if (!isWebpackV5) {
