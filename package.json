@@ -2,7 +2,8 @@
   "name": "webpack-remove-testid-plugin",
   "version": "1.0.0",
   "description": "remove 'data-testid' attribute from component",
-  "main": "index.js",
+  "main": "dist/removeTestIdPlugin.js",
+  "module": "es/removeTestIdPlugin.js",
   "devDependencies": {
     "@babel/generator": "^7.19.0",
     "@babel/parser": "^7.19.0",
@@ -18,11 +19,16 @@
     "webpack": "^5.74.0"
   },
   "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc *.ts --outDir dist",
-    "build:esm": "tsc *.ts --outDir es -m es6"
+    "build:esm": "tsc *.ts --outDir es -m es6 --moduleResolution node"
   },
   "author": "fleksin",
   "license": "ISC",
   "type": "module",
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "dist/*",
+    "es/*"
+  ]
 }
