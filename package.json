@@ -18,7 +18,8 @@
     "webpack": "^5.74.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:cjs": "tsc *.ts --outDir dist",
+    "build:esm": "tsc *.ts --outDir es -m es6"
   },
   "author": "fleksin",
   "license": "ISC",
