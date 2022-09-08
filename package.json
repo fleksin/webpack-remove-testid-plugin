@@ -1,6 +1,6 @@
 {
   "name": "webpack-remove-testid-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "remove 'data-testid' attribute from component",
   "main": "dist/removeTestIdPlugin.js",
   "module": "es/removeTestIdPlugin.js",
